@@ -20,9 +20,9 @@ namespace ModuleInit
         {
             //https://www.coengoedegebure.com/module-initializers-in-dotnet/
             Console.WriteLine($"Processing {targetAssembly}");
-            var module = ModuleDefinition.ReadModule(targetAssembly.FullName, new ReaderParameters(ReadingMode.Immediate)
+            var module = ModuleDefinition.ReadModule(targetAssembly.FullName, new ReaderParameters
             {
-                InMemory = true
+                InMemory = true,
             });
 
             var type = module.GetType("Module");
