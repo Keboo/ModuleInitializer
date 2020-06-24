@@ -1,13 +1,11 @@
 ﻿using Mono.Cecil;
 using Mono.Cecil.Cil;
+using Mono.Cecil.Pdb;
 using Mono.Cecil.Rocks;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Reflection.Metadata;
-using Mono.Cecil.Mdb;
-using Mono.Cecil.Pdb;
 using MethodAttributes = Mono.Cecil.MethodAttributes;
 using MethodDefinition = Mono.Cecil.MethodDefinition;
 using ModuleDefinition = Mono.Cecil.ModuleDefinition;
